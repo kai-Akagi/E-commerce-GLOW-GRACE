@@ -553,3 +553,51 @@ h1, h2, h3, .logo a {
     font-weight: 600;
     color: var(--text-muted);
 }
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.qty-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-dark);
+    background: transparent;
+    color: var(--accent-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.qty-btn:hover {
+    background: var(--accent-dark);
+    color: white;
+}
+
+.qty-value {
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+.cart-item-subtotal {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.cart-item-subtotal p {
+    font-weight: 700;
+    color: var(--primary);
+}
